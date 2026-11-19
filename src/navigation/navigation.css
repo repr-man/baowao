@@ -1,0 +1,132 @@
+.rail {
+  flex: 0 0 224px;
+  background: #273c34;
+  color: #e8eee8;
+  padding: 28px 18px 20px;
+  display: flex;
+  flex-direction: column;
+}
+.rail ::-webkit-scrollbar-thumb {
+  background-color: #789284;
+}
+@supports not selector(::-webkit-scrollbar) {
+  .rail,
+  .rail * {
+    scrollbar-color: #789284 transparent;
+  }
+}
+.rail-button {
+  border: 0;
+  color: #d8e1d9;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-align: left;
+  padding: 12px 10px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 600;
+}
+.rail-button:hover:not(:disabled) {
+  background: #385147;
+  color: white;
+}
+.rail-button:disabled {
+  opacity: 0.5;
+}
+.path-bar {
+  margin: 28px 42px 0;
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  color: #777e72;
+}
+.breadcrumbs {
+  flex: 1;
+  min-width: 0;
+  overflow-x: auto;
+  font-size: 12px;
+}
+.breadcrumbs ol {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  width: max-content;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.breadcrumbs li {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  white-space: nowrap;
+}
+.breadcrumbs a,
+.breadcrumbs li > span {
+  display: block;
+  border: 0;
+  border-radius: 5px;
+  padding: 7px 5px;
+  color: inherit;
+  background: transparent;
+  font: inherit;
+}
+.breadcrumbs a:hover,
+.breadcrumbs li > span[data-hovered] {
+  background: #e9ece4;
+  color: #315747;
+}
+.breadcrumbs [role="link"] {
+  cursor: pointer;
+}
+.breadcrumbs li[data-current] > span {
+  color: #30332e;
+  font-weight: 700;
+}
+.breadcrumbs [data-focus-visible] {
+  outline: 2px solid #315747;
+  outline-offset: 2px;
+}
+.breadcrumb-separator {
+  color: #aab4a7;
+  flex: none;
+}
+.icon-button {
+  width: 36px;
+  height: 36px;
+  display: grid;
+  place-items: center;
+  border: 1px solid #e2e4da;
+  border-radius: 8px;
+  color: #546156;
+  background: #fff;
+}
+.icon-button:hover:not(:disabled) {
+  background: #edf1e9;
+}
+
+@media (max-width: 1000px) {
+  .rail {
+    flex-basis: 180px;
+  }
+  .path-bar {
+    margin-left: 28px;
+    margin-right: 28px;
+  }
+}
+@media (max-width: 760px) {
+  .rail {
+    flex-basis: 64px;
+    padding: 20px 12px;
+    align-items: center;
+  }
+  .rail-button {
+    font-size: 0;
+    padding: 13px;
+  }
+  .path-bar {
+    margin: 20px 20px 0;
+  }
+}

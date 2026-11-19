@@ -1,0 +1,52 @@
+{
+  "name": "baowao",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "main": "dist/electron/main.js",
+  "engines": {
+    "node": ">=22.12"
+  },
+  "scripts": {
+    "dev": "vite",
+    "dev:web": "vite --mode web",
+    "build": "vite build",
+    "start": "electron .",
+    "typecheck": "tsc --noEmit",
+    "setup:electron": "node node_modules/electron/install.js"
+  },
+  "dependencies": {
+    "@solid2-aria/components": "0.0.1",
+    "@solid2-aria/sonner": "0.0.1",
+    "@solidjs/router": "2.0.0-next.40",
+    "@solidjs/web": "2.0.0-rc.21",
+    "@treelight/bash": "0.6.0",
+    "@treelight/browser": "0.6.0",
+    "@treelight/c": "0.6.0",
+    "@treelight/cpp": "0.6.0",
+    "@treelight/css": "0.6.0",
+    "@treelight/go": "0.6.0",
+    "@treelight/html": "0.6.0",
+    "@treelight/java": "0.6.0",
+    "@treelight/javascript": "0.6.0",
+    "@treelight/json": "0.6.0",
+    "@treelight/markdown": "0.6.0",
+    "@treelight/python": "0.6.0",
+    "@treelight/rust": "0.6.0",
+    "@treelight/theme-github-light": "0.6.0",
+    "@treelight/toml": "0.6.0",
+    "@treelight/tsx": "0.6.0",
+    "@treelight/typescript": "0.6.0",
+    "@treelight/yaml": "0.6.0",
+    "phosphor-solid": "github:repr-man/phosphor-solid#7b5af409036d36a0c0d17a0b595c2872af45d7d3",
+    "solid-js": "2.0.0-rc.21"
+  },
+  "devDependencies": {
+    "@solidjs/vite-plugin": "3.0.0-next.57",
+    "@types/node": "26.6.6",
+    "electron": "45.2.3",
+    "typescript": "7.0.2",
+    "valence": "github:repr-man/valence#a45d4e5bb66cd800535ce573ce81065ca1614c1c",
+    "vite": "8.3.6"
+  }
+}
