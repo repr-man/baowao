@@ -2,6 +2,8 @@
 
 A Linux disk usage explorer built with SolidJS 2, Electron, Valence, and Phosphor Solid.
 
+![Baowao application screenshot](screenshots/app.png)
+
 ## Run
 
 Requirements: Node.js 22.12 or later and pnpm.
